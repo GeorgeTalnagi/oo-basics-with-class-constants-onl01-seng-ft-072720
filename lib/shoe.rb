@@ -6,6 +6,9 @@ BRANDS = []
 
   def initialize(brand)
     @brand = brand
+    #if BRANDS does not include the brand argument in the list, add it 
+    #if BRANDS does include the argument, skip 
+    #! makes it look for a boolian value of false (! = not that)
     if !BRANDS.include? (brand)
       BRANDS << brand 
     end 
